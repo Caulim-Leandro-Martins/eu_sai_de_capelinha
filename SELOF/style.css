@@ -49,17 +49,40 @@ section:hover{
     font-family:'Courier New', Courier, monospace;
     color:#fbff1f;
 }
-.tinfole a{
+.tinfole{
+    a{
     color: #8000ff;
     text-decoration:none;
-}
+    }
     ul li{
         list-style: none;
     }
+}
 header {
     position:sticky;
     top:0;
     z-index:5;
+}
+#armando{
+    display:none;
+}
+@media (max-width:830px){
+    #armando{
+        display:block;
+    }
+    .tinfole ul{
+        display:none;
+    }
+    section{
+        font-size:12px;
+        max-width:400px;
+    }
+    iframe{
+        width:250px;
+    }
+    img{
+        width:250px;
+    }
 }
 
 /* Comentar linha: Ctrl+; */
