@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
 body {
     font-family:Manrope,sans-serif;
     background-image: url(./Imagens_provasdocrime/fire-skull-afp2pbw4ow8234mm.jpg);
@@ -8,11 +6,9 @@ body {
     color: #83d883;
     background-attachment:fixed;
 }
-
 html{
     scroll-behavior:smooth;
 }
-
 section {
     text-align: center;
     /*animation: O 10s ease-in-out;*/
@@ -42,7 +38,7 @@ section:hover{
         opacity: 1;
     }
 }
-.Sonic:hover{
+.sonic:hover{
     background-image: linear-gradient(#5350f7, #8fa9ff, #fff6dd, #650510, #be5300, #e79203);
     border:3px solid #000094;
     box-shadow: 0px 0px 56px #8f6dec;
@@ -70,7 +66,7 @@ header {
     #armando{
         display:block;
     }
-    .tinfole ul{
+    .opcoes{
         display:none;
     }
     section{
@@ -83,6 +79,12 @@ header {
     img{
         width:250px;
     }
+    .mostrar_menu{
+        display:grid;
+    }
+}
+#sonho ul{
+    list-style:none;
 }
 
 /* Comentar linha: Ctrl+; */
