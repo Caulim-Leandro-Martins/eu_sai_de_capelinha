@@ -11,12 +11,15 @@ html{
 }
 section {
     text-align: center;
-    /*animation: O 10s ease-in-out;*/
     background-image: linear-gradient(to left, #006dec, #34448f, #8f4434, #ec6d00);
-    width:750px;
-    margin:auto;
-    border:3px solid #503500;
-    border-radius:64px;
-    margin-bottom:64px;
+    width: 750px;
+    margin: auto;
+    border: 3px solid #503500;
+    border-radius: 64px;
+    margin-bottom: 64px;
     box-shadow: 0px 0px 28px #d8d800;
+}
+section p{
+    text-align: justify;
+    text-indent: 25px;
 }
