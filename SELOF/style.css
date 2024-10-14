@@ -86,7 +86,18 @@ header {
 #sonho ul{
     list-style:none;
 }
-
+#versus {
+    font-family:Manrope,sans-serif;
+    background-color:dodgerblue;
+    border:none;
+    border-radius:5px;
+}
+#versus:hover {
+    background-color:deepskyblue;
+}
+#versus:active {
+    background-color: coral;
+}
 /* Comentar linha: Ctrl+; */
 /* Organizar código: Alt+Shift+F */
 /* Mudar tela: Alt+Tab */
