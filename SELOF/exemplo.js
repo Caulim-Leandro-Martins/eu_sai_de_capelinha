@@ -35,5 +35,5 @@ var num1;
 function gigolo(){
     num1=document.getElementById("n1").ariaValueMax;
     console.log("UI!"+num1);
-    alert('UI!'+num1);
+    alert('UI! '+num1);
 }

@@ -65,6 +65,7 @@ header {
 @media (max-width:830px){
     #armando{
         display:block;
+        cursor:pointer;
     }
     .opcoes{
         display:none;
@@ -91,6 +92,7 @@ header {
     background-color:dodgerblue;
     border:none;
     border-radius:5px;
+    cursor:pointer;
 }
 #versus:hover {
     background-color:deepskyblue;
