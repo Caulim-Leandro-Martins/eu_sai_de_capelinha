@@ -38,6 +38,9 @@ div{
     margin-right:auto;
     transition:0.25s;
 }
+#frm{
+    display:none
+}
 .bt:hover{
     background-color:#00ffff;
     color:#ff00ff;
