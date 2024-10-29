@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idol Fest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffc0cb;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 20px;
+        }
+        .carta {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 280px;
+            line-height: 1.2;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 8px;
+        }
+        .carta p {
+            margin: 6px 0;
+        }
+        #formulario {
+            display: none; /* O formulário começa escondido */
+            margin-top: 20px;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        button {
+            margin-top: 10px; /* Para espaçamento entre os botões */
+        }
+    </style>
+</head>
+<body>
+    <h1>Idol Fest</h1>
+    <div class="carta">
+        <p>Idol Fest<br>
+        Rua das Artes, Nº 123<br>
+        São Paulo - SP<br>
+        28 de outubro de 2024</p>
+
+        <p>Caro(a) participante,</p>
+
+        <p>Parabéns! Você foi aceito(a) no Idol Fest! Estamos muito felizes em tê-lo(a) conosco para explorar seu talento e ajudá-lo(a) a se desenvolver ao máximo. Nossos instrutores estão prontos para guiá-lo(a) nas aulas de dança, canto e performance.</p>
+
+        <p>Para garantir sua vaga, finalize sua inscrição com nossa equipe, no prazo de cinco dias. Em breve, você receberá mais detalhes sobre a programação das aulas.</p>
+
+        <p>Bem-vindo(a) à família Idol Fest! Mal podemos esperar para vê-lo(a) brilhar no palco!</p>
+
+        <button onclick="mostrarFormulario()">Inscrição</button> <!-- Botão de inscrição -->
+        
+        <div id="formulario">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" required>
+            </div>
+            <div class="input-group">
+                <label for="pronomes">Pronomes:</label>
+                <input type="text" id="pronomes" required>
+            </div>
+            <div class="input-group">
+                <label for="estiloMusical">Estilo Musical:</label>
+                <input type="text" id="estiloMusical" required>
+            </div>
+            <div class="input-group">
+                <label for="classe">Classe:</label>
+                <input type="text" id="classe" required>
+            </div>
+            <div class="input-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" required>
+            </div>
+            <button id="btnFinalizar" style="display: none;" onclick="finalizarInscricao()">Finalizar Inscrição</button> <!-- Botão "Finalizar Inscrição" escondido -->
+        </div>
+    </div>
+
+    <script>
+        function mostrarFormulario() {
+            document.getElementById('formulario').style.display = 'block'; // Mostra o formulário
+            document.getElementById('btnFinalizar').style.display = 'block'; // Mostra o botão "Finalizar Inscrição"
+        }
+
+        function finalizarInscricao() {
+            const nome = document.getElementById('nome').value;
+            const altura = document.getElementById('altura').value;
+            const pronomes = document.getElementById('pronomes').value;
+            const estiloMusical = document.getElementById('estiloMusical').value;
+            const classe = document.getElementById('classe').value;
+            const idade = document.getElementById('idade').value;
+
+            // Redireciona para a página boletim_escolar.html com os dados na URL
+            window.location.href = `boletim_escolar.html?nome=${encodeURIComponent(nome)}&altura=${encodeURIComponent(altura)}&pronomes=${encodeURIComponent(pronomes)}&estiloMusical=${encodeURIComponent(estiloMusical)}&classe=${encodeURIComponent(classe)}&idade=${encodeURIComponent(idade)}`;
+        }
+    </script>
+</body>
+</html>

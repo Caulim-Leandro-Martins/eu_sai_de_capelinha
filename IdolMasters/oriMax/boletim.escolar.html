@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .boletim {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .boletim h2 {
+            text-align: center; /* Centraliza o título */
+            margin-bottom: 10px;
+        }
+        .boletim p {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            font-weight: bold; /* Deixa os critérios em negrito */
+        }
+        /* Estilo para a seção do celular */
+        .celular {
+            width: 120px; /* Largura do celular */
+            height: 220px; /* Altura do celular */
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 20px; /* Espaçamento à esquerda */
+            display: inline-block; /* Para exibir ao lado do boletim */
+            vertical-align: top; /* Alinha ao topo */
+            position: relative; /* Necessário para posicionar o conteúdo dentro */
+        }
+        .celular h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .barras {
+            margin: 5px 0;
+        }
+        input[type="range"] {
+            width: 100%; /* Largura das barras deslizantes */
+        }
+    </style>
+</head>
+<body>
+    <div class="boletim">
+        <h2>Boletim Escolar</h2> <!-- Título adicionado -->
+        <p><strong>Nome:</strong> <span id="nome"></span></p>
+        <p><strong>Altura:</strong> <span id="altura"></span></p>
+        <p><strong>Pronomes:</strong> <span id="pronomes"></span></p>
+        <p><strong>Estilo Musical:</strong> <span id="estiloMusical"></span></p>
+        <p><strong>Classe:</strong> <span id="classe"></span></p>
+        <p><strong>Idade:</strong> <span id="idade"></span></p>
+        
+        <!-- Tabela de desempenho escolar -->
+        <table>
+            <tr>
+                <th>Critério</th>
+                <th>Nota (0-100)</th>
+            </tr>
+            <tr>
+                <td>Força</td>
+                <td><input type="number" id="forca" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>Agilidade</td>
+                <td><input type="number" id="agilidade" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>Vigor</td>
+                <td><input type="number" id="vigor" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>Carisma</td>
+                <td><input type="number" id="carisma" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>Intelecto</td>
+                <td><input type="number" id="intelecto" min="0" max="100"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Seção do celular -->
+    <div class="celular">
+        <h3>Desempenho</h3>
+        <div class="barras">
+            <span>P.v:</span>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+        <div class="barras">
+            <span>Fama midiática:</span>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+        <div class="barras">
+            <span>Reputação escolar:</span>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+        <div class="barras">
+            <span>Situacão escolar:</span>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+        <div class="barras">
+            <span>Sanidade:</span>
+            <input type="range" min="0" max="100" value="100" disabled>

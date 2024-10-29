@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Press+Start+2P&display=swap&family=Tiny5&display=swap');
+body{
+    background-image:url(./synthscape.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    color:#333333;
+}
+h1{
+    font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+div{
+    background-color:#ffc0cbda;
+    border-radius: 20px;
+    width:730px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:20px;
+    padding:10px;
+}
+#att{
+    text-align:right;
+}
+.bt{
+    font-family: 'Tiny5', 'Courier New', Courier, monospace;
+    font-size:25px;
+    color:#333333;
+    background-color:#7fffd4;
+    width:256px;
+    border:#0000;
+    border-radius:20px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    transition:0.25s;
+}
+.bt:hover{
+    background-color:#00ffff;
+    color:#ff00ff;
+}
+.bt:active{
+    background-color:#b21ecf;
+    color:#ffffff;
+    transition:none;
+}
+@media (max-width:830px){
+    body{
+        background-attachment:fixed;
+    }
+    div{
+        font-size:13px;
+        line-height:14px;
+        max-width:400px;
+    }
+    .bt{
+        font-size:15px;
+        max-width:150px;
+        }
+}
+@media (max-width:450px){
+    body{
+        background-attachment:fixed;
+    }
+    div{
+        font-size:10px;
+        line-height:12px;
+        max-width:300px;
+    }
+    .bt{
+        font-size:15px;
+        }
+}
