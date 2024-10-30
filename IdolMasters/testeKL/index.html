@@ -24,34 +24,34 @@
     <div id="frm">
       <form>
         <p>
-          <label >Nome:</label><br>
-          <input type="text" class="campo">
+          <label>Nome:</label><br>
+          <input type="text" class="campo" id="nome" required>
         </p>
         <p>
           <label>Idade:</label><br>
-          <input type="text" class="campo">
+          <input type="text" class="campo" id="idad" required>
         </p>
         <p>
           <label>Pronomes:</label><br>
-          <input type="text" class="campo">
+          <input type="text" class="campo" id="pron" required>
         </p>
         <p>
           <label>Altura:</label><br>
-          <input type="text" class="campo">
+          <input type="text" class="campo" id="altu" required>
         </p>
         <p>
           <label>Peso:</label><br>
-          <input type="text" class="campo">
+          <input type="text" class="campo" id="peso" required>
         </p>
         <p>
           <label>Classe:</label><br>
-          <input type="text" class="campo">
+          <input type="text" class="campo" id="clas" required>
         </p>
         <p>
           <label>Estilo Musical:</label><br>
-          <input type="text" class="campo">
+          <input type="text" class="campo" id="esmu" required>
         </p>
-        <button type="submit" class="bt" id="final">Finalizar Inscrição</button>
+        <button type="submit" class="bt" id="final" onclick="completa()">Finalizar Inscrição</button>
       </form>
     </div>
     <script src="./script.js"></script>

@@ -39,7 +39,15 @@ div{
     transition:0.25s;
 }
 #frm{
-    display:none
+    text-align:center;
+    display:none;
+    width:500px;
+    
+}
+.campo{
+    width:250px;
+    border:3px solid #ffffff;
+    border-radius:20px;
 }
 .bt:hover{
     background-color:#00ffff;
