@@ -33,4 +33,24 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+.menu{
+    background-color: rgb(50, 51, 67);
+    height: 100vh; /* altura máxima da tela */
+    list-style: none;
+}
+.menu-item{
+    display: block;
+    color: white;
+    padding: 8px 0px;
+    font-size: 22px;
+}
+.menu-item:hover{
+    text-decoration: none;
+    color: aqua;
+    transition: 1s;
+}
+@media(max-width: 768px){
+    .menu{
+        display: none;
+    }
+}
